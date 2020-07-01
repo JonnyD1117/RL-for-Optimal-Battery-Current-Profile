@@ -1,6 +1,7 @@
-clear all
-close all
-clc
+
+
+function [var1, var2] = sensitivity_anlysis()
+
 
 % import Battery Parameters
 scott_battery_params
@@ -8,8 +9,6 @@ scott_battery_params
 % Import Discrete State Space model
 discrete_statespace_model
 
-
-function [var1, var2] = CompSim()
 
     for k=1:Kup
         %% electrolyte
